@@ -4,99 +4,164 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Apps von Benjamin Schühler</title>
-  <meta name="description" content="Apps von Benjamin Schühler: Dent-App, KlassenKasse, Klassenfahrt Planer, KassenKick und ZockZeit. Ohne Konto, deine Daten bleiben bei dir.">
+  <meta name="description" content="Apps für Handwerk, Schule, Verein und Familie: Dent-App, KlassenKasse, Klassenfahrt Planer, KassenKick und ZockZeit. Ohne Konto, deine Daten bleiben bei dir.">
+  <meta name="theme-color" content="#eef1f8">
   <link rel="icon" href="assets/dent-app.jpg">
+  <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="aurora" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="./">Schühler Apps</a>
+      <nav aria-label="Hauptnavigation">
+        <a href="#apps">Apps</a>
+        <a href="#support">Support</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <header class="top">
-      <h1>Apps von Benjamin Schühler</h1>
-      <p>Durchdachte Apps für Handwerk, Schule, Verein und Familie. Ohne Konto und ohne Werbung, deine Daten bleiben bei dir.</p>
-    </header>
-
-    <section class="apps" aria-label="Apps">
-      <article class="app">
-        <img class="icon" src="assets/dent-app.jpg" alt="" width="72" height="72">
-        <div>
-          <h2>Dent-App</h2>
-          <div class="fuer">Für Dellen- und Hageltechniker</div>
-          <p>Hagelschäden pro Bauteil erfassen, Preis sofort sehen und das Angebot als PDF noch beim Kunden verschicken.</p>
-          <div class="links">
-            <a href="https://apps.apple.com/de/app/id6809597661"><img src="assets/app-store-de.svg" alt="Laden im App Store" width="120" height="40"></a>
-            <a href="https://play.google.com/store/apps/details?id=com.dentiq.app"><img src="assets/google-play-de.png" alt="Jetzt bei Google Play" width="135" height="46"></a>
-            <a class="web" href="https://dent-app.de">Zur Website</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="app">
-        <img class="icon" src="assets/klassenkasse.jpg" alt="" width="72" height="72">
-        <div>
-          <h2>KlassenKasse</h2>
-          <div class="fuer">Für Elternvertreter, Lehrkräfte und Kita-Gruppen</div>
-          <p>Wer hat schon bezahlt, was wurde ausgegeben, wie viel ist noch da? Die Klassenkasse ohne Zettelwirtschaft.</p>
-          <div class="links">
-            <a href="https://apps.apple.com/de/app/id6815326031"><img src="assets/app-store-de.svg" alt="Laden im App Store" width="120" height="40"></a>
-            <a href="https://play.google.com/store/apps/details?id=com.benjaminschuehler.klassenkasse"><img src="assets/google-play-de.png" alt="Jetzt bei Google Play" width="135" height="46"></a>
-            <a class="web" href="https://bennikrafft-beep.github.io/KlassenKasse/">Zur Website</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="app">
-        <img class="icon" src="assets/klassenfahrt.jpg" alt="" width="72" height="72">
-        <div>
-          <h2>Klassenfahrt Planer</h2>
-          <div class="fuer">Für Lehrkräfte und Begleitpersonen</div>
-          <p>Alles für die Klassenfahrt an einem Ort, von den ersten Angeboten bis zur Abfahrt am Bus. Offline nutzbar.</p>
-          <div class="links">
-            <a href="https://apps.apple.com/de/app/id6821438487"><img src="assets/app-store-de.svg" alt="Laden im App Store" width="120" height="40"></a>
-            <a class="web" href="https://bennikrafft-beep.github.io/Klassenfahrt/">Zur Website</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="app">
-        <img class="icon" src="assets/kassenkick.jpg" alt="" width="72" height="72">
-        <div>
-          <h2>KassenKick</h2>
-          <div class="fuer">Für Mannschaften und Vereine</div>
-          <p>Mannschaftskasse, Strafen und Mitglieder im Griff, egal ob Fußball, Handball, Dart oder Kegeln.</p>
-          <div class="links">
-            <a href="https://apps.apple.com/de/app/id6809922341"><img src="assets/app-store-de.svg" alt="Laden im App Store" width="120" height="40"></a>
-            <a class="web" href="https://bennikrafft-beep.github.io/KassenKick/">Zur Website</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="app">
-        <img class="icon" src="assets/zockzeit.jpg" alt="" width="72" height="72">
-        <div>
-          <h2>ZockZeit</h2>
-          <div class="fuer">Für Eltern</div>
-          <p>Spielzeit gibt es nur gegen gelöste Aufgaben. Ohne Bildschirmzeit-Code, ohne Diskussion.</p>
-          <div class="links">
-            <a href="https://apps.apple.com/de/app/id6824279744"><img src="assets/app-store-de.svg" alt="Laden im App Store" width="120" height="40"></a>
-            <a class="web" href="https://bennikrafft-beep.github.io/ZockZeit/">Zur Website</a>
-          </div>
-        </div>
-      </article>
+    <section class="hero wrap">
+      <div class="hero-text">
+        <h1>Apps, die deinen Alltag leichter machen.</h1>
+        <p class="lead">Für Handwerk, Schule, Verein und Familie. Ohne Konto, ohne Werbung, deine Daten bleiben bei dir.</p>
+        <a class="btn" href="#apps">Apps ansehen <span class="icon"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span></a>
+      </div>
+      <div class="hero-phones" aria-hidden="true">
+        <figure class="phone p-back"><img src="assets/screens/klassenkasse.jpg" alt="" width="600" height="1299"></figure>
+        <figure class="phone p-front"><img src="assets/screens/dent-app.jpg" alt="" width="552" height="1200"></figure>
+        <figure class="phone p-side"><img src="assets/screens/zockzeit.jpg" alt="" width="600" height="1304"></figure>
+      </div>
     </section>
 
-    <section class="kontakt" id="support">
-      <h2>Support und Kontakt</h2>
-      <p>Fragen, Wünsche oder ein Fehler gefunden? Schreib mir, ich antworte in der Regel innerhalb eines Werktags. Nenne gern kurz die App und dein Gerät.</p>
-      <a class="mail" href="mailto:support@schuehler-apps.de">support@schuehler-apps.de</a>
+    <section class="apps wrap" id="apps">
+      <h2 class="reveal">Fünf Apps, gebaut für echte Abläufe.</h2>
+
+      <div class="bento">
+        <article class="cell c-dent reveal">
+          <div class="cell-text">
+            <img class="app-icon" src="assets/dent-app.jpg" alt="" width="64" height="64">
+            <h3>Dent-App</h3>
+            <p class="fuer">Für Dellen- und Hageltechniker</p>
+            <p>Hagelschäden pro Bauteil erfassen, Preis sofort sehen und das Angebot als PDF noch beim Kunden verschicken.</p>
+            <div class="links">
+              <a href="https://apps.apple.com/de/app/id6809597661"><img src="assets/app-store-de.svg" alt="Laden im App Store" width="120" height="40"></a>
+              <a href="https://play.google.com/store/apps/details?id=com.dentiq.app"><img class="gp" src="assets/google-play-de.png" alt="Jetzt bei Google Play" width="135" height="40"></a>
+            </div>
+            <a class="more" href="https://dent-app.de">Mehr zur Dent-App <span class="icon"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span></a>
+          </div>
+          <img class="shot" src="assets/screens/dent-app.jpg" alt="Dent-App: Schadenserfassung mit farbig markierten Bauteilen" width="552" height="1200" loading="lazy">
+        </article>
+
+        <article class="cell c-kasse reveal">
+          <div class="cell-text">
+            <img class="app-icon" src="assets/klassenkasse.jpg" alt="" width="64" height="64">
+            <h3>KlassenKasse</h3>
+            <p class="fuer">Für Elternvertreter, Lehrkräfte und Kitas</p>
+            <p>Wer hat bezahlt, was wurde ausgegeben? Die Klassenkasse ohne Zettelwirtschaft.</p>
+            <div class="links">
+              <a href="https://apps.apple.com/de/app/id6815326031"><img src="assets/app-store-de.svg" alt="Laden im App Store" width="120" height="40"></a>
+              <a href="https://play.google.com/store/apps/details?id=com.benjaminschuehler.klassenkasse"><img class="gp" src="assets/google-play-de.png" alt="Jetzt bei Google Play" width="135" height="40"></a>
+            </div>
+            <a class="more" href="https://bennikrafft-beep.github.io/KlassenKasse/">Mehr zur KlassenKasse <span class="icon"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span></a>
+          </div>
+          <img class="shot" src="assets/screens/klassenkasse.jpg" alt="KlassenKasse: Kassenstand und offene Beträge" width="600" height="1299" loading="lazy">
+        </article>
+
+        <article class="cell c-fahrt reveal">
+          <div class="cell-text">
+            <img class="app-icon" src="assets/klassenfahrt.jpg" alt="" width="64" height="64">
+            <h3>Klassenfahrt Planer</h3>
+            <p class="fuer">Für Lehrkräfte und Begleitpersonen</p>
+            <p>Angebote, Einverständnisse, Notfallkontakte und Kosten an einem Ort. Auch offline.</p>
+            <div class="links">
+              <a href="https://apps.apple.com/de/app/id6821438487"><img src="assets/app-store-de.svg" alt="Laden im App Store" width="120" height="40"></a>
+            </div>
+            <a class="more" href="https://bennikrafft-beep.github.io/Klassenfahrt/">Mehr zum Planer <span class="icon"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span></a>
+          </div>
+          <img class="shot" src="assets/screens/klassenfahrt.jpg" alt="Klassenfahrt Planer: Übersicht einer Fahrt mit Countdown" width="600" height="1304" loading="lazy">
+        </article>
+
+        <article class="cell c-kick reveal">
+          <div class="cell-text">
+            <img class="app-icon" src="assets/kassenkick.jpg" alt="" width="64" height="64">
+            <h3>KassenKick</h3>
+            <p class="fuer">Für Mannschaften und Vereine</p>
+            <p>Mannschaftskasse, Strafen und Mitglieder im Griff. Vom Fußball bis zum Kegeln.</p>
+            <div class="links">
+              <a href="https://apps.apple.com/de/app/id6809922341"><img src="assets/app-store-de.svg" alt="Laden im App Store" width="120" height="40"></a>
+            </div>
+            <a class="more" href="https://bennikrafft-beep.github.io/KassenKick/">Mehr zu KassenKick <span class="icon"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span></a>
+          </div>
+          <img class="shot" src="assets/screens/kassenkick.jpg" alt="KassenKick: Kassenstand, Strafen und Beiträge des Teams" width="600" height="1299" loading="lazy">
+        </article>
+
+        <article class="cell c-zock reveal">
+          <div class="cell-text">
+            <img class="app-icon" src="assets/zockzeit.jpg" alt="" width="64" height="64">
+            <h3>ZockZeit</h3>
+            <p class="fuer">Für Eltern</p>
+            <p>Spielzeit gibt es nur gegen gelöste Aufgaben. Ohne Bildschirmzeit-Code, ohne Diskussion.</p>
+            <div class="links">
+              <a href="https://apps.apple.com/de/app/id6824279744"><img src="assets/app-store-de.svg" alt="Laden im App Store" width="120" height="40"></a>
+            </div>
+            <a class="more" href="https://bennikrafft-beep.github.io/ZockZeit/">Mehr zu ZockZeit <span class="icon"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span></a>
+          </div>
+          <img class="shot" src="assets/screens/zockzeit.jpg" alt="ZockZeit: Startbildschirm für das Kind mit verdienter Spielzeit" width="600" height="1304" loading="lazy">
+        </article>
+      </div>
+    </section>
+
+    <section class="werte wrap reveal" aria-label="So sind die Apps gebaut">
+      <div class="wert">
+        <span class="icon big"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,80H176V56a48,48,0,0,0-96,0V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80ZM96,56a32,32,0,0,1,64,0V80H96ZM208,208H48V96H208V208Z"/></svg></span>
+        <div><h3>Kein Konto nötig</h3><p>Herunterladen und loslegen. Keine Anmeldung, kein Passwort.</p></div>
+      </div>
+      <div class="wert">
+        <span class="icon big"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,40H48A16,16,0,0,0,32,56v56c0,52.72,25.52,84.67,46.93,102.19,23.06,18.86,46,25.26,47,25.53a8,8,0,0,0,4.2,0c1-.27,23.91-6.67,47-25.53C198.48,196.67,224,164.72,224,112V56A16,16,0,0,0,208,40Zm0,72c0,37.07-13.66,67.16-40.6,89.42A129.3,129.3,0,0,1,128,223.62a128.25,128.25,0,0,1-38.92-21.81C61.82,179.51,48,149.3,48,112l0-56,160,0ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"/></svg></span>
+        <div><h3>Deine Daten bleiben bei dir</h3><p>Gespeichert auf deinem Gerät und auf Wunsch in deinem eigenen iCloud.</p></div>
+      </div>
+      <div class="wert">
+        <span class="icon big"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M168,112a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,112Zm-8,24H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm72-8A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"/></svg></span>
+        <div><h3>Persönlicher Support</h3><p>Deine Nachricht landet direkt bei mir, nicht in einem Callcenter.</p></div>
+      </div>
+    </section>
+
+    <section class="support wrap reveal" id="support">
+      <div>
+        <h2>Fragen, Ideen oder ein Fehler gefunden?</h2>
+        <p>Schreib mir. Ich antworte in der Regel innerhalb eines Werktags. Nenne gern kurz die App und dein Gerät, dann geht es schneller.</p>
+      </div>
+      <a class="btn btn-mail" href="mailto:support@schuehler-apps.de"><span class="icon"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg></span>support@schuehler-apps.de</a>
     </section>
   </main>
 
-  <footer>
+  <footer class="wrap">
     <span>&copy; 2026 Benjamin Schühler</span>
     <nav aria-label="Rechtliches">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
     </nav>
   </footer>
+
+  <script>
+    // Einblenden beim Scrollen (ohne Scroll-Listener); bei reduzierter Bewegung sofort sichtbar
+    (function () {
+      var items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        items.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.15 });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
 </body>
 </html>
