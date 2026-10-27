@@ -187,3 +187,97 @@ footer a { color: var(--muted); }
   .shot, .c-dent .shot, .c-kasse .shot, .c-fahrt .shot, .c-kick .shot, .c-zock .shot { width: 150px; right: 18px; bottom: -120px; transform: rotate(4deg); }
   .btn-mail { font-size: 15px; white-space: normal; }
 }
+
+/* ZockZeit-Seite (zockzeit.html) */
+.zz .hero { min-height: 0; padding-bottom: 56px; }
+.zz .hero h1 { max-width: 11ch; }
+.zz-icon { width: 72px; height: 72px; border-radius: 18px; margin-bottom: 18px; }
+.zz-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 24px; }
+.zz-cta .more { margin: 0; padding: 0; }
+.zz-badge { height: 50px; width: auto; }
+.zz-klein { font-size: 15px; margin-top: 18px; max-width: 46ch; }
+.zz-block { padding-top: 40px; padding-bottom: 40px; scroll-margin-top: 72px; }
+.zz-h2 { font-size: clamp(28px, 3.4vw, 42px); letter-spacing: -0.03em; line-height: 1.1; margin: 0 0 16px; }
+.zz-block > .lead { margin-bottom: 28px; }
+.zz-nr { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%;
+  background: linear-gradient(135deg, #5b62ee, #a24bdb); color: #fff; font-weight: 700; font-size: 16px; flex: none; }
+
+/* drei Karten nebeneinander, Bild unten im Rahmen */
+.zz-drei { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 24px; }
+.zz-karte { flex-direction: column; padding: 24px 24px 0; min-height: 0; gap: 8px; }
+.zz-karte h3 { margin: 6px 0 0; font-size: 21px; letter-spacing: -0.02em; }
+.zz-karte p { margin: 0; color: var(--muted); }
+.zz-shot { width: 72%; max-width: 240px; margin: 18px auto -60px; border-radius: 26px; border: 6px solid var(--glass-strong);
+  box-shadow: var(--shadow); transition: transform .5s cubic-bezier(.16,1,.3,1); }
+.zz-karte { overflow: hidden; padding-bottom: 0; }
+.zz-karte:hover .zz-shot { transform: translateY(-8px); }
+.zz-liste { padding-bottom: 24px; }
+.zz-liste ul { margin: 6px 0 0; padding-left: 20px; color: var(--muted); }
+.zz-liste li { margin: 6px 0; color: var(--muted); }
+.zz-liste li strong { color: var(--text); }
+.zz-karte:nth-child(1) { background: linear-gradient(160deg, color-mix(in srgb, #5b62ee 14%, var(--glass)), var(--glass)); }
+.zz-karte:nth-child(2) { background: linear-gradient(160deg, color-mix(in srgb, #ff9f5a 14%, var(--glass)), var(--glass)); }
+.zz-karte:nth-child(3) { background: linear-gradient(160deg, color-mix(in srgb, #2fa37a 14%, var(--glass)), var(--glass)); }
+
+.zz-brauchst { margin: 0; }
+
+/* Einrichtung: Schritte mit Text links, Bildern rechts */
+.zz-schritte { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; counter-reset: none; }
+.zz-schritt { display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center; padding: 28px; border-radius: var(--radius);
+  background: var(--glass); border: 1px solid var(--line); backdrop-filter: blur(18px) saturate(150%); -webkit-backdrop-filter: blur(18px) saturate(150%);
+  box-shadow: var(--shadow); }
+.zz-schritt:not(:has(.zz-bilder)) { grid-template-columns: 1fr; }
+.zz-text { max-width: 62ch; }
+.zz-text h3 { font-size: 22px; letter-spacing: -0.02em; margin: 12px 0 8px; }
+.zz-text p { margin: 0 0 10px; }
+.zz-text .muted { font-size: 15px; }
+.zz-wichtig { background: linear-gradient(160deg, color-mix(in srgb, #ff9f5a 16%, var(--glass)), var(--glass)); }
+.zz-bilder { display: flex; gap: 16px; }
+.zz-bilder figure { margin: 0; width: 190px; text-align: center; }
+.zz-bilder img { border-radius: 24px; border: 6px solid var(--glass-strong); box-shadow: var(--shadow); }
+.zz-bilder figcaption { font-size: 13px; color: var(--muted); margin-top: 10px; }
+
+/* Weg durch die Einstellungen, wie eine Reihe von Tipp-Zielen */
+.zz-pfad { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 14px 0; }
+.zz-pfad span { background: var(--glass-strong); border: 1px solid var(--line); border-radius: 10px; padding: 6px 12px;
+  font-size: 15px; font-weight: 600; }
+.zz-pfad i { font-style: normal; color: var(--muted); }
+.zz-pfad span:last-child { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+
+.zz-fertig { display: flex; gap: 16px; padding: 26px; min-height: 0; margin-top: 18px;
+  background: linear-gradient(135deg, color-mix(in srgb, #2fa37a 18%, var(--glass)), var(--glass)); }
+.zz-fertig h3 { margin: 0 0 4px; font-size: 20px; }
+.zz-fertig p { margin: 0; color: var(--muted); }
+.zz-fertig .icon.big { color: #2fa37a; }
+
+/* Häufige Probleme */
+.zz-faq { display: block; padding: 8px 26px; min-height: 0; }
+.zz-faq details { border-top: 1px solid var(--line); padding: 16px 0; }
+.zz-faq details:first-child { border-top: 0; }
+.zz-faq summary { cursor: pointer; font-weight: 600; list-style: none; position: relative; padding-right: 32px; }
+.zz-faq summary::-webkit-details-marker { display: none; }
+.zz-faq summary::after { content: "+"; position: absolute; right: 4px; top: -2px; color: var(--accent); font-size: 1.4rem; }
+.zz-faq details[open] summary::after { content: "–"; }
+.zz-faq details p { margin: 10px 0 0; color: var(--muted); }
+.zz-mehr { margin-top: 16px; font-size: 15px; }
+
+@media (max-width: 960px) {
+  .zz-drei { grid-template-columns: 1fr 1fr; }
+  .zz-schritt { grid-template-columns: 1fr; }
+  .zz-bilder { justify-content: flex-start; }
+}
+@media (max-width: 600px) {
+  .zz-drei { grid-template-columns: 1fr; }
+  .zz-schritt { padding: 22px 18px; }
+  .zz-bilder { gap: 12px; }
+  .zz-bilder figure { width: calc(50% - 6px); max-width: 170px; }
+  .zz-bilder img { border-radius: 18px; border-width: 4px; }
+  .zz-shot { width: 62%; }
+  .zz-faq { padding: 4px 18px; }
+  .zz-pfad span { font-size: 14px; }
+}
+@media (max-width: 600px) {
+  .zz .brand { white-space: nowrap; }
+  .zz .nav nav { gap: 12px; }
+  .zz .nav nav a { white-space: nowrap; font-size: 14px; }
+}
